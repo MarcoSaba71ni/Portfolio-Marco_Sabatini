@@ -1,0 +1,24 @@
+{
+  "name": "portfolio-marco_sabatini",
+  "version": "1.0.0",
+  "description": "Marco Sabatini Portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarcoSaba71ni/Portfolio-Marco_Sabatini.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MarcoSaba71ni/Portfolio-Marco_Sabatini/issues"
+  },
+  "homepage": "https://github.com/MarcoSaba71ni/Portfolio-Marco_Sabatini#readme",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.1.17",
+    "tailwindcss": "^4.1.17"
+  }
+}

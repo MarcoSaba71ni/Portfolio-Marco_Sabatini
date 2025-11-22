@@ -1,1 +1,9 @@
-@import "tailwindcss"
+@import "tailwindcss";
+
+.contact-btn {
+    background-color: blueviolet;
+    color: thistle;
+    padding: 8px 16px;
+    border-radius: 6px;
+    border: 1px solid white;
+}

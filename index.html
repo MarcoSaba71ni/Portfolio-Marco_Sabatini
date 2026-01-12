@@ -15,11 +15,15 @@
 
     </header>
     <main class=" flex flex-col max-w-4xl mx-auto p-6 gap-24">
-        <section class="flex justify-center gap-6">
+        <section class="flex flex-col justify-center gap-6">
             <div class="flex flex-col flex-wrap gap-2">
                 <!--Marco Img, Location and Links-->
-                <img src="images/profile-marco.jpeg" alt="Marco Profile Image" class="w-[200px] h-[200px] object-cover rounded-full">
-                 <p class="flex gap-1 justify-center text-white"><i class=" pt-1 fa-solid fa-location-dot" style="color: #ffffff;"></i> Stockholm, Sweden</p>
+                <div>
+                    <img src="images/profile-marco.jpeg" alt="Marco Profile Image" class="w-[200px] h-[200px] mx-auto shrink-0 object-cover rounded-full">
+                </div>
+                <div>
+                    <p class="flex gap-1 justify-center text-white"><i class=" pt-1 fa-solid fa-location-dot" style="color: #ffffff;"></i> Stockholm, Sweden</p>
+                </div>
                 <!--Icons-->
                 <div class="flex flex-row gap-1 justify-center">
                     <a class="cursor-pointer :hover">
@@ -34,19 +38,25 @@
                         <img src="images/tiktok-img.png" class="w-6.5 h-6.5 mr-2 rounded-md">
                     </a>
                 </div>
+                <div class="flex justify-center">
+                    <p class="font-sans text-white">ms.sabatinil@gmail.com</p>
+                </div>
             </div>
             <div class="font-[Pla] flex flex-col gap-12">
                 <!--Marco Info-->
                 <div class="flex flex-col flex-wrap gap-3">
                     <h1 class="font-[Orbitron] text-white text-5xl align-center">Marco Sabatini</h1>
-                    <h2 class="font-[Orbitron]  text-2xl text-white">Full Stack Developer | React, Express.js, GO</h2>
-                    <p class="font-sans text-white">Multilingual Driven Full Stack Developer based in Sweden. Multilingual Driven Full Stack Developer based in Sweden.</p> 
+                    <h2 class="font-[Orbitron]  text-2xl text-white">Full Stack Developer | React, Express.js</h2>
+                    <p class="font-sans text-white">Multilingual Full Stack Developer based in Sweden, specializing in scalable web applications with Next.js. Dedicated to crafting intuitive user experiences and continuously improving through real-world projects and collaboration.</p> 
                 </div>
-                <div class="flex justify-center">
-                    <button class=" text-white bg-blue-700 hover:bg-blue-800 cursor-pointer font-sans border rounded-md p-2 " >
-                        Contact Me
-                    </button>
-                </div>
+                <section class="text-center">
+                    <h4 class="font-sans text-white text-2xl mx-auto">Let's work together</h4>
+
+                    <a href="#about-section" 
+                        class="font-sans text-white mt-2 inline-block px-4 py-3 bg-blue-700 hover:bg-blue-800 rounded-md ">
+                        Know Marco better</a>
+
+                </section>
             </div>
         </section>
 
@@ -54,40 +64,140 @@
             <h2 class="font-[Orbitron] text-white text-4xl align-center">My Stack</h2>
             <div class="flex flex-row gap-12 flex-wrap">
                 <div class="flex flex-row gap-2 items-end">                
-                    <img src="images/js-img.png" alt="js image" class="object-cover" width="50" height="50">
-                    <h4 class="text-white text-3xl">Java Script</h4>
+                    <img src="images/js-img.png" alt="js image" class="rounded-md object-cover w-8 h-8">
+                    <h4 class="text-white text-base md:text-lg">Java Script</h4>
                 </div>
                 <div class="flex flex-row gap-2 items-end">                
-                    <img src="images/ts-img.png" alt="js image" class="rounded-md object-cover" width="50" height="50">
-                    <h4 class="text-white text-3xl">Type Script</h4>
+                    <img src="images/ts-img.png" alt="js image" class="rounded-md object-cover w-8 h-8">
+                    <h4 class="text-white text-base md:text-lg">Type Script</h4>
                 </div>
                 <div class="flex flex-row gap-2 items-end">                
-                    <img src="images/tailwind-img.png" alt="tailwind image" class="rounded-md object-cover" width="50" height="50">
-                    <h4 class="text-white text-3xl">Tailwind CSS</h4>
+                    <img src="images/tailwind-img.png" alt="tailwind image" class="rounded-md object-cover w-8 h-8">
+                    <h4 class="text-white text-base md:text-lg">Tailwind CSS</h4>
                 </div>
                 <div class="flex flex-row gap-2 items-end">                
-                    <img src="images/react-img.png" alt="react image" class="rounded-md object-cover" width="50" height="50">
-                    <h4 class="text-white text-3xl">React</h4>
+                    <img src="images/react-img.png" alt="react image" class="rounded-md object-cover w-8 h-8">
+                    <h4 class="text-white text-base md:text-lg">React</h4>
                 </div>  
                 <div class="flex flex-row gap-2 items-end">                
-                    <img src="images/bootstrap-img2.jpg" alt="bootstrap image" class="rounded-md object-cover" width="50" height="50">
-                    <h4 class="text-white text-3xl">Bootstrap</h4>
+                    <img src="images/bootstrap-img2.jpg" alt="bootstrap image" class="rounded-md object-cover w-8 h-8">
+                    <h4 class="text-white text-base md:text-lg">Bootstrap</h4>
                 </div>                
                 <div class="flex flex-row gap-2 items-end">                
-                    <img src="images/express-img.png" alt="express image" class="rounded-md object-cover" width="50" height="50">
-                    <h4 class="text-white text-3xl">Express Js</h4>
+                    <img src="images/express-img.png" alt="express image" class="rounded-md object-cover w-8 h-8">
+                    <h4 class="text-white text-base md:text-lg">Express Js</h4>
                 </div>  
                 <div class="flex flex-row gap-2 items-end">                
-                    <img src="images/html-img.png" alt="express image" class="rounded-md object-cover" width="50" height="50">
-                    <h4 class="text-white text-3xl items-end">HTML</h4>
+                    <img src="images/html-img.png" alt="express image" class="rounded-md object-cover w-8 h-8">
+                    <h4 class="text-white text-base md:text-lg">HTML</h4>
                 </div>  
             </div>
         </section>
+        <section class="mt-20">
+            <h2 class="font-[Orbitron] text-white text-4xl mb-8">
+                Featured Projects
+            </h2>
+
+            <div class="grid grid-cols md:grid-cols-2 lg:grid-cols-3 gap-8 ">
+
+                <!-- CARD -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-md flex flex-col">
+
+                <!-- Thumbnail -->
+                    <a href="https://marcosaba71ni.github.io/Auction_Webpage-SemesterProject/">
+                        <img
+                        src="images/auction-project_img.png"
+                        alt="Auction project"
+                        class="w-full aspect-video object-cover"
+                        />
+                    </a>
+
+                <!-- Card content -->
+                    <div class="p-4 flex flex-col gap-4 flex-grow">
+
+                        <div>
+                            <h3 class="text-lg font-[Orbitron]">Libertini Auctions</h3>
+                            <p class="text-sm text-gray-600">Auction Website</p>
+                            <a href="https://github.com/MarcoSaba71ni/Auction_Webpage-SemesterProject.git"
+                            class="text-blue-500 hover:text-blue-700 text-sm">
+                                GitHub link
+                            </a>
+                        </div>
+
+                    <!-- Tech icons -->
+                        <div class="flex gap-2 mt-auto">
+                        <img src="images/express-img.png" alt="Express" class="w-6 h-6">
+                        <img src="images/js-img.png" alt="JavaScript" class="w-6 h-6">
+                        </div>
+
+                    </div>
+                </div>
+
+        <!-- CARD -->
+        <div class="bg-white rounded-xl overflow-hidden shadow-md">
+            <!-- Thumbnail -->  
+            <a href="https://marcosaba71ni.github.io/JS-SportAgency/">
+                <img src="images/sports-agency_image.png"
+                alt="Sports Agency Image"
+                class="w-full aspect-video object-cover border"
+                >
+            </a>
+            <!-- Card Content -->  
+            <div class="p-4 flex flex-col gap-4 flex-grow">
+                <div>
+                    <h3 class="text-lg font-[Orbitron]">Team Turco</h3>
+                    <p class="text-sm text-gray-600">Sports Agency</p>
+                    <a href="https://github.com/MarcoSaba71ni/JS-SportAgency.git" class="text-blue-500 hover:text-blue-700 text-sm">GitHub Repo</a>
+                </div>
+
+                <!-- Tech Content -->
+                <div class="flex gap-2 mt-auto">
+                    <img src="images/html-img.png" alt="HTML icon" class="w-6 h-6 object-cover">
+                    <img src="images/css_image.jpg" alt="CSS icon" class="w-6 h-6 object-cover">
+                    <img src="images/js-img.png" alt="JavaScript icon" class="w-6 h-6 object-cover">
+                </div>
+
+            </div>
+
+            </div>
+            <!-- CARD -->
+            <div class="bg-white rounded-xl overflow-hidden shadow-md">
+                <!-- Thumbnail -->  
+                <a href="https://marcosaba71ni.github.io/JS2-SocialMediaApp/">
+                    <img src="images/social-media_img.png"
+                    alt="Social Media Image"
+                    class="w-full aspect-video object-cover border"
+                    >
+                </a>
+                <!-- Card Content -->  
+                <div class="p-4 flex flex-col gap-4 flex-grow">
+                    <div>
+                        <h3 class="text-lg font-[Orbitron]">Meddle</h3>
+                        <p class="text-sm text-gray-600">Social Media</p>
+                        <a href=""
+                        class="text-blue-500 hover:text-blue-700 text-sm">
+                        GitHub Repo</a>
+                    </div>
+
+                    <!-- Tech Content -->
+                    <div class="flex gap-2 mt-auto">
+                        <img src="images/html-img.png" alt="HTML icon" class="w-6 h-6 object-cover">
+                        <img src="images/tailwind-img.png" alt="Tailwind icon" class="w-6 h-6 object-cover">                
+                        <img src="images/js-img.png" alt="JavaScript icon" class="w-6 h-6 object-cover">
+                    </div>
+
+                </div>
+
+            </div>
+        
+    </div>
+    </section>
+
         <section>
-            <h2 class="font-[Orbitron] text-white text-4xl align-center">Featured Projects</h2>
+        <h2 class="font-[Orbitron] text-white text-4xl align-center">AI Frontend</h2>
             <div>
-                <div class="flex flex-row gap-8 card-container pt-8">
-                    <div class="flex flex-col gap-2 w-140 web-card rounded-md bg-white p-1">
+                <div class="flex flex-row flex-wrap gap-8 card-container pt-8">
+                    <div class="flex flex-col gap-2 w-100 web-card rounded-md bg-white p-1">
                         <img src="images/Rainy Days Image.png" class="w-140 h-auto object-cover">
                         <div class="flex flex-col card-txt">
                             <h3 class="text-lg font-[Orbitron]">Rainy Days</h3>
@@ -102,7 +212,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="flex flex-col gap-2 w-140 web-card rounded-md bg-white p-1">
+                    <div class="flex flex-col gap-2 w-100 web-card rounded-md bg-white p-1">
                         <img src="images/Rainy Days Image.png" class="w-140 h-auto object-cover">
                         <div class="flex flex-col card-txt">
                             <h3 class="text-lg font-[Orbitron]">Rainy Days</h3>
@@ -117,9 +227,86 @@
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
+        </section>
+        <section id="about-section">
+            <h2 class="font-[Orbitron] text-white text-4xl align-center">About Marco</h2>
+            <div class="pt-8 flex flex-col gap-8">
+                <!-- Dropdown Section -->
+                <div class="bg-white rounded-xl p-6 ">
+                    <h3 class="text-3xl">Education and Certificates</h3>
+                    <!-- Certificate Bullets -->
+                    <div class="flex flex-col gap-2 pt-2">
+                        <div>
+                            <h4>Frontend Developer - Noroff</h4>
+                            <p>2 years degree as a Frontend Developer at the Norwegian University - Noroff</p>
+                        </div>
+                        <div>
+                            <h4>Business Development - Hyper Island</h4>
+                            <p>2 years degree as a Frontend Developer at the Norwegian University - Noroff</p>
+                        </div>
+                        <div>
+                            <button class=" p-2 rounded-md mx-auto flex flex-col gap-1 justify-center cursor-pointer text-xs">
+                                <p>Show More</p>
+                                <i class="fa-solid fa-chevron-down fa-xl" style="color: grey;"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                      <!-- Dropdown Section -->
+                <div class="bg-white rounded-xl p-6">
+                    <h3 class="text-3xl">Professional Profile</h3>
+                    <!-- Certificate Bullets -->
+                    <div class="flex flex-col gap-2 pt-2">
+                        <div>
+                            <h4>Frontend Developer - Noroff</h4>
+                            <p>2 years degree as a Frontend Developer at the Norwegian University - Noroff</p>
+                        </div>
+                        <div>
+                            <h4>Business Development - Hyper Island</h4>
+                            <p>2 years degree as a Frontend Developer at the Norwegian University - Noroff</p>
+                        </div>
+                        <div>
+                            <button class=" p-2 rounded-md mx-auto flex flex-col gap-1 justify-center cursor-pointer text-xs">
+                                <p>Show More</p>
+                                <i class="fa-solid fa-chevron-down fa-xl" style="color: grey;"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                      <!-- Dropdown Section -->
+                <div class="bg-white rounded-xl p-6">
+                    <h3 class="text-3xl">Work Experience</h3>
+                    <!-- Certificate Bullets -->
+                    <div class="flex flex-col gap-2 pt-2">
+                        <div>
+                            <h4>Frontend Developer - Noroff</h4>
+                            <p>2 years degree as a Frontend Developer at the Norwegian University - Noroff</p>
+                        </div>
+                        <div>
+                            <h4>Business Development - Hyper Island</h4>
+                            <p>2 years degree as a Frontend Developer at the Norwegian University - Noroff</p>
+                        </div>
+                        <div>
+                            <button class=" p-2 rounded-md mx-auto flex flex-col gap-1 justify-center cursor-pointer text-xs">
+                                <p>Show More</p>
+                                <i class="fa-solid fa-chevron-down fa-xl" style="color: grey;"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Dropdown Section -->
+                <div>
+
+                </div>
+                <!-- Dropdown Section -->
+                <div>
+
                 </div>
             </div>
         </section>
     </main>
+    <script src="main.js" type="module"></script>
 </body>
 </html>

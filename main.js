@@ -1,0 +1,1 @@
+const contactBtn = document.getElementById('contact-btn');

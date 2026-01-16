@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,9 +11,6 @@
     <link href="./css/style.css" rel="stylesheet">
 </head>
 <body class="min-h-screen bg-gradient-to-br from-black to-blue-500">
-    <header>
-
-    </header>
     <main class=" flex flex-col max-w-4xl mx-auto p-6 gap-24">
         <section class="flex flex-col justify-center gap-6">
             <div class="flex flex-col flex-wrap gap-2">
@@ -54,7 +51,8 @@
 
                     <a href="#about-section" 
                         class="font-sans text-white mt-2 inline-block px-4 py-3 bg-blue-700 hover:bg-blue-800 rounded-md ">
-                        Know Marco better</a>
+                        Know Marco better
+                    </a>
 
                 </section>
             </div>
@@ -88,6 +86,11 @@
                     <h4 class="text-white text-base md:text-lg">Express Js</h4>
                 </div>  
                 <div class="flex flex-row gap-2 items-end">                
+                    <img src="images/mysql-img.png" alt="mysql image" class="rounded-md object-cover w-8 h-8">
+                    <h4 class="text-white text-base md:text-lg">MySql</h4>
+                </div>  
+
+                <div class="flex flex-row gap-2 items-end">                
                     <img src="images/html-img.png" alt="express image" class="rounded-md object-cover w-8 h-8">
                     <h4 class="text-white text-base md:text-lg">HTML</h4>
                 </div>  
@@ -101,7 +104,7 @@
             <div class="grid grid-cols md:grid-cols-2 lg:grid-cols-3 gap-8 ">
 
                 <!-- CARD -->
-                <div class="bg-white rounded-xl overflow-hidden shadow-md flex flex-col">
+                <div class="bg-white rounded-xl overflow-hidden shadow-md flex flex-col transform transition-transform duration-300 ease-out hover:scale-105">
 
                 <!-- Thumbnail -->
                     <a href="https://marcosaba71ni.github.io/Auction_Webpage-SemesterProject/">
@@ -134,7 +137,7 @@
                 </div>
 
         <!-- CARD -->
-        <div class="bg-white rounded-xl overflow-hidden shadow-md">
+        <div class="bg-white rounded-xl overflow-hidden shadow-md transform transition-transform duration-300 ease-out hover:scale-105">
             <!-- Thumbnail -->  
             <a href="https://marcosaba71ni.github.io/JS-SportAgency/">
                 <img src="images/sports-agency_image.png"
@@ -161,7 +164,7 @@
 
             </div>
             <!-- CARD -->
-            <div class="bg-white rounded-xl overflow-hidden shadow-md">
+            <div class="bg-white rounded-xl overflow-hidden shadow-md transform transition-transform duration-300 ease-out hover:scale-105">
                 <!-- Thumbnail -->  
                 <a href="https://marcosaba71ni.github.io/JS2-SocialMediaApp/">
                     <img src="images/social-media_img.png"
@@ -232,9 +235,9 @@
         </section>
         <section id="about-section">
             <h2 class="font-[Orbitron] text-white text-4xl align-center">About Marco</h2>
-            <div class="pt-8 flex flex-col gap-8">
+            <div class="pt-8 flex flex-col gap-8 ">
                 <!-- Dropdown Section -->
-                <div class="bg-white rounded-xl p-6 ">
+                <div class="bg-white rounded-xl p-6">
                     <h3 class="text-3xl">Education and Certificates</h3>
                     <!-- Certificate Bullets -->
                     <div class="flex flex-col gap-2 pt-2">
@@ -242,14 +245,24 @@
                             <h4>Frontend Developer - Noroff</h4>
                             <p>2 years degree as a Frontend Developer at the Norwegian University - Noroff</p>
                         </div>
-                        <div>
-                            <h4>Business Development - Hyper Island</h4>
-                            <p>2 years degree as a Frontend Developer at the Norwegian University - Noroff</p>
+                        <div id="full-content" class="hidden">
+                            <div >
+                                <h4>Business Development - Hyper Island</h4>
+                                <p>2 years degree as a Frontend Developer at the Norwegian University - Noroff</p>
+                            </div>
                         </div>
                         <div>
-                            <button class=" p-2 rounded-md mx-auto flex flex-col gap-1 justify-center cursor-pointer text-xs">
+                            <button class=" p-2 rounded-md mx-auto flex flex-col gap-1 justify-center text-xs
+                            transform transition-transform duration-300 ease-out hover:scale-110 cursor-pointer"
+                            id="show-more-btn">
                                 <p>Show More</p>
                                 <i class="fa-solid fa-chevron-down fa-xl" style="color: grey;"></i>
+                            </button>
+                            <button class=" p-2 rounded-md mx-auto flex flex-col gap-1 justify-center text-xs
+                                transform transition-transform duration-300 ease-out hover:scale-110 cursor-pointer hidden"
+                                id="show-less-btn">
+                                    <p>Show less</p>
+                                    <i class="fa-solid fa-chevron-down fa-xl" style="color: grey;"></i>
                             </button>
                         </div>
                     </div>
@@ -276,7 +289,7 @@
                     </div>
                 </div>
                       <!-- Dropdown Section -->
-                <div class="bg-white rounded-xl p-6">
+                <div class="bg-white rounded-xl p-6 transform transition-transform duration-300 ease-out hover:scale-105 cursor-pointer">
                     <h3 class="text-3xl">Work Experience</h3>
                     <!-- Certificate Bullets -->
                     <div class="flex flex-col gap-2 pt-2">
@@ -295,14 +308,6 @@
                             </button>
                         </div>
                     </div>
-                </div>
-                <!-- Dropdown Section -->
-                <div>
-
-                </div>
-                <!-- Dropdown Section -->
-                <div>
-
                 </div>
             </div>
         </section>

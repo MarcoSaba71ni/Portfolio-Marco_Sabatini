@@ -104,13 +104,3 @@ detailsBlocks.forEach((details) => {
 
 const openButton = document.getElementById("open-button");
 const contactForm = document.getElementById("contact-form");
-
-openButton.addEventListener("click", () => {
-    if (contactForm.classList.contains("hidden")) {
-        contactForm.classList.remove("hidden");
-        contactForm.classList.add("flex");
-    } else {
-        contactForm.classList.remove("flex");
-        contactForm.classList.add("hidden");
-    }
-});

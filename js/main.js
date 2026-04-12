@@ -1,3 +1,11 @@
+import { headerAnimation } from "./animations/headerAnimation.js";
+import { heroAnimation } from "./animations/heroAnimation.js";
+
+
+window.addEventListener("DOMContentLoaded", () => {
+	headerAnimation();
+	heroAnimation();
+});
 
 const detailsBlocks = document.querySelectorAll(".about-details");
 const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -104,3 +112,4 @@ detailsBlocks.forEach((details) => {
 
 const openButton = document.getElementById("open-button");
 const contactForm = document.getElementById("contact-form");
+

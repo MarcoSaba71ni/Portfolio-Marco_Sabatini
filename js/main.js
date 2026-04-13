@@ -1,10 +1,13 @@
 import { headerAnimation } from "./animations/headerAnimation.js";
 import { heroAnimation } from "./animations/heroAnimation.js";
-
+import { projectsAnimation } from "./animations/projectsAnimation.js";
+import { stackAnimation } from "./animations/stackAnimation.js";
 
 window.addEventListener("DOMContentLoaded", () => {
 	headerAnimation();
 	heroAnimation();
+	stackAnimation();
+	projectsAnimation();
 });
 
 const detailsBlocks = document.querySelectorAll(".about-details");

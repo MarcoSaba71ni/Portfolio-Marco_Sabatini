@@ -4,6 +4,7 @@
   "description": "Marco Sabatini Portfolio",
   "main": "index.js",
   "scripts": {
+    "dev": "npm run watch",
     "watch": "tailwindcss -i ./src/input.css -o ./css/style.css --watch",
     "build": "tailwindcss -i ./src/input.css -o ./css/style.css --minify"
   },

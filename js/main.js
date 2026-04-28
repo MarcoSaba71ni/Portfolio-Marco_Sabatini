@@ -7,7 +7,6 @@ window.addEventListener("DOMContentLoaded", () => {
 	headerAnimation();
 	heroAnimation();
 	stackAnimation();
-	projectsAnimation();
 });
 
 const detailsBlocks = document.querySelectorAll(".about-details");
